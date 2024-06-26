@@ -1,0 +1,355 @@
+.projects-background {
+  background: url('../assets/images/BG3.jpg') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-overlay {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.projects-sider {
+  background: rgba(255, 255, 255, 0.6) !important;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  position: sticky;
+  top: 0;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally */
+}
+
+.projects-header {
+  display: none;
+}
+
+.project-select-sidebar {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.project-select-drawer {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-select-sidebar span {
+  color: #3498db;
+  font-weight: bold;
+}
+.projects-sider span {
+  color: #3498db;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.projects-content {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 24px;
+  margin: 0;
+  min-height: 280px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.project-name {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+}
+
+.project-section {
+  margin-bottom: 24px;
+}
+
+.section-card {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.section-title {
+  margin-bottom: 16px;
+  color: #2980b9;
+  font-family: 'Georgia', serif;
+  margin-top: 50px;
+}
+.section-subTitle {
+  margin-bottom: 16px;
+  color: #2980b9;
+  font-family: 'Georgia', serif;
+}
+
+.section-content {
+  line-height: 1.6;
+}
+
+.projects-sider .ant-menu-item {
+  font-size: 16px;
+}
+
+.projects-sider .ant-menu {
+  font-size: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-typography {
+  margin-bottom: 16px;
+}
+
+.ant-divider-horizontal {
+  margin: 24px 0;
+}
+
+.ant-layout-sider {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+}
+
+.menu-button {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .projects-sider {
+    display: none;
+  }
+  .projects-content {
+    padding-left: 15px;
+  }
+  .project-name {
+    font-size: 18px !important;
+  }
+  .projects-overlay {
+    width: 100%;
+    display: block;
+  }
+  .project-section {
+    padding: 5px;
+  }
+  .menu-button {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 4px;
+    z-index: 1000;
+  }
+
+  .section-title {
+    font-size: 16px !important;
+    margin-top: 0px;
+  }
+  .section-subTitle,
+  .section-content p,
+  .section-content ul,
+  .section-content li,
+  .section-content a,
+  .section-content code,
+  .section-content h4,
+  .section-content ul ul,
+  .section-content ul ul li,
+  .section-content ul ul ul,
+  .section-content ul ul ul li,
+  .section-content pre {
+    font-size: 14px !important; /* Decrease font size further for smaller screens */
+    line-height: 1.4; /* Adjust line height accordingly */
+    margin-bottom: 10px; /* Adjust margin for better spacing */
+  }
+
+  .section-content div {
+    font-size: 14px; /* Decrease font size further for smaller screens */
+    line-height: 1.4; /* Adjust line height accordingly */
+  }
+
+  .section-content ul {
+    padding-left: 2px; /* Decrease padding for smaller screens */
+  }
+  
+  .section-content ul ul {
+    padding-left: 2px; /* Decrease padding for nested lists */
+  }
+  
+  .section-content ul ul ul {
+    padding-left: 2px; /* Decrease padding for deeper nested lists */
+  }
+  
+  .section-content strong,
+  .section-content em {
+    font-size: 14px; /* Adjust font size for emphasized text */
+  }
+  
+  .section-content pre {
+    padding: 6px; /* Adjust padding for code blocks */
+    font-size: 12px; /* Decrease font size for code blocks */
+  }
+}
+
+/* Updated CSS for styled elements with larger font sizes */
+/* Updated CSS for styled elements with larger font sizes and increased line height */
+.section-content p {
+  font-family: 'Arial', sans-serif;
+  color: #34495e;
+  margin-bottom: 16px;
+  font-size: 18px; /* Increased font size */
+  line-height: 1.8; /* Increased line height */
+}
+
+.section-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+  font-size: 18px; /* Increased font size */
+  line-height: 1.8; /* Increased line height */
+}
+
+.section-content li {
+  margin-bottom: 8px;
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+  font-size: 18px; /* Increased font size */
+  line-height: 1.8; /* Increased line height */
+}
+
+.section-content ul li::marker {
+  color: #2980b9;
+}
+
+.section-content a {
+  color: #2980b9;
+  text-decoration: underline;
+  font-size: 18px; /* Increased font size */
+  line-height: 1.8; /* Increased line height */
+}
+
+.section-content a:hover {
+  color: #1abc9c;
+}
+
+
+.section-content code {
+  background-color: #f5f5f5;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-content h4 {
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  color: #2c3e50;
+  margin-top: 24px;
+}
+
+.section-content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.section-content li {
+  margin-bottom: 8px;
+  font-family: 'Arial', sans-serif;
+  color: #2c3e50;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.section-content ul li::marker {
+  color: #2980b9;
+}
+
+.section-content a {
+  color: #2980b9;
+  text-decoration: underline;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.section-content a:hover {
+  color: #1abc9c;
+}
+.section-content p {
+  font-family: 'Arial', sans-serif;
+  color: #34495e;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* New CSS for list styling within lists */
+.section-content ul ul {
+  list-style-type: circle;
+  padding-left: 20px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.section-content ul ul li::marker {
+  color: #8e44ad;
+}
+.section-content strong {
+  font-weight: bold;
+
+}
+
+.section-content em {
+  font-style: italic;
+  color: #9b59b6;
+}
+.section-content ul ul ul {
+  list-style-type: square;
+  padding-left: 20px;
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.section-content ul ul ul li::marker {
+  color: #3498db;
+}
+.section-content pre {
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  overflow: auto;
+  margin-bottom: 16px;
+}

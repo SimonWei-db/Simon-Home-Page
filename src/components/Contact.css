@@ -1,0 +1,87 @@
+.contact-page {
+  position: relative;
+  background: url('../assets/images/BG4.jpg') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-background-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content-container {
+  background: rgba(255, 255, 255, 0.345);
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%;
+  margin-top: 20px;
+}
+
+.contact-title-container {
+  text-align: center;
+}
+
+.contact-info-card {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-title {
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 8px;
+  font-size: 24px;
+  color: #1890ff;
+}
+
+.contact-form-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-form {
+  max-width: 100%;
+}
+
+.contact-form-card,
+.contact-map-card {
+  background-color: #f9f9f9;
+  height: 500px; /* 设定两个组件相同的高度 */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* 添加阴影 */
+  border: 2px solid #e8e8e8; /* 添加外边框 */
+}
+
+.map-container {
+  margin-top: 10px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .contact-content-container {
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .contact-info-card {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}

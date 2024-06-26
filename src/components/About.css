@@ -1,0 +1,123 @@
+.about-page {
+  position: relative;
+  background: url('../assets/images/BG2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.about-background-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content-container {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  width: 40%;
+  margin-top: 20px;
+}
+
+.about-tab-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.about-title-with-logo {
+  display: flex;
+  align-items: center;
+}
+
+.about-school-logo, .about-company-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.about-card {
+  width: 100%;
+  max-width: 650px;
+  margin-bottom: 20px;
+}
+
+.custom-collapse {
+  margin-bottom: 0px;
+}
+
+.custom-collapse .custom-collapse-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.custom-collapse .custom-collapse-content {
+  background: rgba(240, 240, 240, 0.7);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+.custom-divider {
+  margin: 8px 0;  /* 调整分隔线的上下间距 */
+}
+.custom-collapse .ant-btn-link {
+  padding: 0;
+  height: auto;
+  font-size: 14px;
+}
+
+.ant-tabs-tab {
+  font-size: 22px !important;
+  font-weight: bold;
+}
+
+.ant-tabs-tab:hover {
+  color: #1890ff;
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1890ff;
+  font-size: 22px;
+}
+
+.ant-tabs-ink-bar {
+  background-color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .about-content-container {
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  .about-tab-content {
+    padding: 10px 0;
+  }
+
+  .about-card {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .about-title-with-logo img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .ant-tabs-tab {
+    font-size: 18px;
+  }
+}

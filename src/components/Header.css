@@ -1,0 +1,39 @@
+/* Header.css */
+.header {
+    background-color: #ffffff !important; /* 设置为白色背景并确保覆盖 */
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    height: 64px;
+  }
+  
+  .header .logo {
+    font-size: 20px;
+    color: #000000 !important; /* 设置为黑色文字并确保覆盖 */
+    flex: 1;
+  }
+  
+  .header .ant-menu {
+    background-color: #ffffff !important; /* 确保菜单背景也是白色 */
+  }
+  
+  .header .ant-menu-horizontal {
+    background-color: #ffffff !important; /* 确保菜单背景也是白色 */
+  }
+  
+  .header .ant-menu-dark {
+    background-color: #ffffff !important; /* 覆盖 ant-menu-dark 背景颜色 */
+  }
+  
+  .header .ant-menu-dark .ant-menu-item {
+    color: #000000 !important; /* 设置为黑色文字并确保覆盖 */
+  }
+  
+  .header .ant-menu-item {
+    color: #000000 !important; /* 设置为黑色文字并确保覆盖 */
+  }
+  
+  .header .ant-menu-item:hover {
+    background-color: #f0f0f0 !important; /* 设置鼠标悬停时的背景颜色并确保覆盖 */
+  }
+  

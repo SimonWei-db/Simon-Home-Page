@@ -1,0 +1,173 @@
+.home-container-custom {
+    text-align: center;
+    padding: 20px;
+    background: url('/src/assets/images/BG1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Ensures it covers the whole viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.background-image-container-custom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.background-content-custom {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%; /* Limits content width for smaller screens */
+    margin: 0 auto; /* Centers the content */
+
+}
+
+.intro-container-custom {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; /* Space between image and text */
+    margin-top: 20px;
+    gap: 40px
+}
+
+.profile-image-custom {
+    width: 150px; /* Adjust size as needed */
+    height: 150px; /* Adjust size as needed */
+    border-radius: 50%;
+    object-fit: cover;
+    justify-content: flex-start;
+    object-position: 25% 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer; /* Indicates that the image is clickable */
+    
+}
+
+.intro-text-custom {
+    max-width: 500px; /* Adjust width as needed */
+    text-align: center; /* Align text to the left */
+}
+
+.icon-container-custom {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.home-title-custom {
+    color: #fff !important;
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.home-paragraph-custom {
+    color: #fff;
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.897); /* Larger offset and higher opacity */
+    padding: 10px; /* Adds padding to avoid text sticking to the background */
+}
+
+.card-image-custom {
+    height: 100px;
+    object-fit: cover;
+}
+
+.ant-card-custom {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.custom-card-custom {
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(90px);
+    margin: 0px; /* Adds margin outside the card */
+    width: 100%;
+}
+
+.custom-card-custom:hover {
+    transform: translateY(-5px);
+}
+
+.ant-divider-horizontal-custom {
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer-custom {
+    text-align: center;
+    background: #001529;
+    color: #fff;
+    padding: 20px 50px;
+    margin-top: auto; /* Ensures the footer is at the bottom of the page */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    .background-image-container-custom {
+        height: 70vh;
+    }
+
+    .background-content-custom {
+        padding: 10px;
+    }
+
+    .home-title-custom {
+        font-size: 1.5rem !important;
+    }
+
+    .home-paragraph-custom {
+        font-size: 1rem;
+    }
+
+    .card-container {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-container-custom {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+        align-items: center;
+        margin-top: 10px; /* Adds space between title and intro container */
+    }
+
+    .profile-image-custom {
+        margin-bottom: 20px; /* Space between image and text on small screens */
+    }
+
+    .background-image-container-custom {
+        height: auto;
+    }
+
+    .home-title-custom {
+        font-size: 1.5rem;
+    }
+
+    .home-paragraph-custom {
+        font-size: 1rem;
+    }
+
+    .card-container {
+        max-width: 100%;
+    }
+
+    .custom-card-custom {
+        width: 70%; /* The cards take up the entire width on small screens */
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+}
