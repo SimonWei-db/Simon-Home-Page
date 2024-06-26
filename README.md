@@ -1,6 +1,7 @@
 # Xingchen(Simon) Wei - Personal Homepage
 
 Welcome to my personal homepage! This site showcases my professional journey, projects, and interests.
+Visit my personal homepage at [simonoren.com](https://simonoren.com/).
 
 ## Features
 
